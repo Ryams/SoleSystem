@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array
+        name="injuries">
+        <item>@string/plantar_fasciitis</item>
+        <item>@string/sprained_ankle</item>
+    </array>
+</resources>

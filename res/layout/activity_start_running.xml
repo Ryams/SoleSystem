@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StartRunningActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="TODO"
+        android:src="@drawable/solegoodlogo" />
+    
+    <TextView
+        android:id="@+id/duration_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="@string/duration" />
+    
+    <Chronometer
+        android:id="@+id/duration_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duration_title"
+        android:layout_alignLeft="@id/duration_title"
+        android:text="@string/duration" />
+    
+    <TextView
+        android:id="@+id/distance_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duration_timer"
+        android:layout_alignParentLeft="true"
+
+        android:text="@string/distance" />
+    
+    <TextView
+        android:id="@+id/distance_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance_title"
+        android:layout_alignParentLeft="true"
+        android:text="@string/distance" />
+    
+    <TextView
+        android:id="@+id/speed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duration_timer"
+        android:layout_alignParentRight="true"
+        android:text="@string/speed" />
+    
+    <TextView
+        android:id="@+id/speed_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speed_title"
+        android:layout_alignParentRight="true"
+        android:text="@string/speed" />
+    
+	<TextView
+        android:id="@+id/pace_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance_counter"
+        android:layout_alignParentLeft="true"
+        android:text="@string/pace" />
+	
+	<TextView
+        android:id="@+id/pace_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pace_title"
+        android:layout_alignParentLeft="true"
+        android:text="@string/pace" />
+    
+	<TextView
+        android:id="@+id/strike_percent_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance_counter"
+        android:layout_alignParentRight="true"
+        android:text="@string/strike_percent" />
+	
+	<TextView
+        android:id="@+id/strike_percent_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/strike_percent_title"
+        android:layout_alignParentRight="true"
+        android:text="@string/strike_percent" />
+	
+	<Button
+	    android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pace_counter"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start"
+        android:onClick="sendMessage" />
+</RelativeLayout>
